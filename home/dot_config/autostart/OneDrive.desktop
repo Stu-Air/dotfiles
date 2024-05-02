@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=OneDrive
+Comment=unofficial onedrive client for linux 
+Exec=sh -c "rclone --vfs-cache-mode writes mount \"OneDrive\": ~/OneDrive"
+Terminal=false
+Type=Application
+
