@@ -1,0 +1,23 @@
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zsh/.p10k.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
+zstyle ':completion::complete:*' gain-privileges 1
+
+## History file configuration
+[ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh/.zsh_history"
+[ "$HISTSIZE" -lt 50000 ] && HISTSIZE=50000
+[ "$SAVEHIST" -lt 10000 ] && SAVEHIST=10000
+
+## History command configuration
+setopt extended_history       # record timestamp of command in HISTFILE
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups       # ignore duplicated commands history list
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_verify            # show command with history expansion to user before running it
+setopt share_history          # share command history data
+
+alias clean="pacman -Rs $(pacman -Qqtd)"
+alias install="pacman -Sy"
