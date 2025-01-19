@@ -6,6 +6,7 @@
     cp -r home/dot_fonts ~/.fonts
     cp -r home/dot_zsh.dot_p10k.zsh ~/.zsh/.p10k.zsh
     cp home/dot_zshrc ~/.zshrc
+    cp home/dot_bashrc ~/.bashrc
     mkdir ~/Onedrive
     mkdir ~/Videos
     mkdir ~/Videos/TvShows
