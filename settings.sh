@@ -1,30 +1,37 @@
 #! /bin/bash
 
-#Folders
-    cp -r home/Pictures/* ~/Pictures
-    cp -r home/dot_config/* ~/.config
-    cp -r home/dot_fonts ~/.fonts
-    cp -r home/dot_zsh.dot_p10k.zsh ~/.zsh/.p10k.zsh
-    cp home/dot_zshrc ~/.zshrc
-    cp home/dot_bashrc ~/.bashrc
-    mkdir ~/Onedrive
-    mkdir ~/Videos
-    mkdir ~/Videos/TvShows
-    mkdir ~/Videos/Movies
-    mkdir ~/Videos/GameClips
-    mkdir ~/.minecraft
-    mkdir ~/.minecraft/screenshots && ln -sf ~/.minecraft/screenshots ~/Minecraft/screenshots
-    mkdir ~/.minecraft/mods && ln -sf ~/.minecraft/mods ~/Minecraft/mods
-    mkdir ~/.minecraft/schematics && ln -sf ~/.minecraft/schematics ~/Minecraft/schematics
-    mkdir ~/.minecraft/resourcepacks && ln -sf ~/.minecraft/resourcepacks ~/Minecraft/resourcepacks
-    mkdir ~/.minecraft/saves && ln -sf ~/.minecraft/saves ~/Minecraft/saves
-    ln -sf ~/Pictures/profile-pics/profile.png /var/lib/gdm3/.face
-    ln -sf ~/Pictures/profile-pics/profile.png ~/.face 
 
+# Stow Dots
+    stow --adopt bash
+    stow --adopt fastfetch
+    stow --adopt fonts
+    stow --adopt kitty
+    stow --adopt pictures
+    stow --adopt starship
+    stow --adopt vscodium
 
-#ZSH
-    #git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions  # Tab completion for suggestions
-    #git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.zsh/powerlevel10k
-    #chsh -s $(which zsh)
+# VsCodium Extensions
+    mkdir ~/.vscode-oss/extensions/ && cd ~/.vscode-oss/extensions/
+    git clone https://github.com/formulahendry/vscode-auto-rename-tag.git              # Auto Rename Tag
+    git clone https://github.com/alefragnani/vscode-bookmarks.git                      # Bookmarks
+    git clone https://github.com/streetsidesoftware/vscode-spell-checker.git           # Code spellchecker
+    git clone https://github.com/usernamehw/vscode-error-lens.git                      # Code Error lens
+    git clone https://github.com/kisstkondoros/gutter-preview.git                      # image previewer
+    git clone https://github.com/microsoft/vscode-livepreview.git                      # Live preview
+    git clone https://github.com/prettier/prettier-vscode.git                          # Prettier
+    git clone https://github.com/alefragnani/vscode-project-manager.git                # Project manager
+    git clone https://github.com/eggman314/chogori.git                                 # chogori
+    git clone https://github.com/material-extensions/vscode-material-icon-theme.git    # Material icons
+    git clone https://github.com/material-extensions/vscode-material-product-icons.git # Material product icons
+
+# System Themes
+    # Qogir-Round-Dark gtk theme
+    # Qogir-Round-Dark shell theme
+    # Qogir-Dark icons
+    # Qogir Cursor
+
+    # Fira Sans Medium Interface font
+    # Fira Sans Medium Document font
+    # FiraCode Nerd Font
 
     exit

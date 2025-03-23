@@ -1,0 +1,56 @@
+{
+  "git.autofetch": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'FiraCode Nerd Font Mono', 'monospace', monospace",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.colorTheme": "Chogori Darkest Blue",
+  "workbench.sideBar.location": "right",
+  "editor.fontSize": 15,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "phase",
+  "workbench.editor.showTabs": "multiple",
+  "editor.minimap.enabled": true,
+  "editor.lineNumbers": "on",
+  "editor.guides.indentation": false,
+  "breadcrumbs.enabled": false,
+  "workbench.tips.enabled": false,
+  "editor.lightbulb.enabled": "off",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 10,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.decorations.badges": false,
+  "git.decorations.enabled": false,
+  "window.zoomLevel": 0.5,
+  "window.titleBarStyle": "native",
+  "editor.fontLigatures": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#458588",
+          "fontStyle": "italic bold"
+        }
+      }
+    ]
+  },
+  "editor.stickyScroll.enabled": false,
+  "editor.codeLens": false,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "extensions.ignoreRecommendations": true,
+  "editor.wordWrap": "on",
+  "workbench.activityBar.location": "top"
+}
