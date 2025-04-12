@@ -13,13 +13,13 @@
 
 
 # Stow Dots
-    stow --adopt bash
-    stow --adopt fastfetch
-    stow --adopt fonts
-    stow --adopt kitty
-    stow --adopt pictures
-    stow --adopt starship
-    stow --adopt vscodium
+    stow bash
+    stow fastfetch
+    stow fonts
+    stow kitty
+    stow pictures
+    stow starship
+    stow vscodium
 
 # VsCodium Extensions
     mkdir ~/.vscode-oss/extensions/ && cd ~/.vscode-oss/extensions/
