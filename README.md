@@ -40,7 +40,7 @@ All downloaded from main git repo listed above and put into the ~/.vscode-oss fo
 
 #### Gnome Extensions
 
-- Gnome Extensions
+- Gnome shell Extensions - [Github link](https://gitlab.gnome.org/GNOME/gnome-shell-extensions) / [Arch linux link](https://archlinux.org/packages/extra/any/gnome-shell-extensions/)
 - Desktop Icons NG - [Github link](https://gitlab.com/rastersoft/desktop-icons-ng)
 - Blur My Shell - [Github link](https://github.com/aunetx/blur-my-shell)
 - Top Panel Icons - [Github link](https://github.com/ubuntu/gnome-shell-extension-appindicator)

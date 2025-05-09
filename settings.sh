@@ -9,7 +9,7 @@
         documentFont = 'Fira Sans Medium 11'
         titlebarFont = 'Fira Sans Bold 11'
         monospaceFont = 'FiraCode Nerd Font 11'
- 
+
 
 
 # Stow Dots
@@ -20,6 +20,7 @@
     stow pictures
     stow starship
     stow vscodium
+
 
 # VsCodium Extensions
     mkdir ~/.vscode-oss/extensions/ && cd ~/.vscode-oss/extensions/
@@ -39,23 +40,25 @@
 
     # ArcTheme
         git clone https://github.com/vinceliuice/Qogir-theme.git
-        cd Qogir-theme  
-        ./install.sh --tweaks round -c dark -i arch -g -l 
+        cd Qogir-theme
+        ./install.sh --tweaks round -c dark -i arch -g -l
         cd ..
 
     # QogirIcons
         git clone https://github.com/vinceliuice/Qogir-icon-theme.git
         cd Qogir-icon-theme
-        ./install.sh -c dark 
-        cd .. 
+        ./install.sh -c dark
+        cd ..
 
     # Fira Sans Font  ( already in stow files)
     # FiraCode Nerd Font (already in stow files)
 
 
 # Gnome Extensions
+    #Gnome Sheel Extensions
+    sudo pacman -Sy gnome-shell-extensions --noconfirm
 
-    #DesktopIcons    
+    #DesktopIcons
         git clone https://gitlab.com/rastersoft/desktop-icons-ng.git
         cd desktop-icons-ng
         meson --prefix=$HOME/.local/ --localedir=share/gnome-shell/extensions/ding@rastersoft.com/locale .build
@@ -134,9 +137,9 @@
         sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 
 
-  
+
     # Setting up Gnome Shell layout & themes
-  
+
     #DisableExtension
     #    gsettings set org.gnome.shell disabled-extensions "['ubuntu-dock@ubuntu.com','desktop-icons@csoriano']"
 

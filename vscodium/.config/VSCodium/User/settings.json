@@ -6,7 +6,6 @@
   "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
-  "workbench.colorTheme": "Chogori Darkest Blue",
   "workbench.sideBar.location": "right",
   "editor.fontSize": 15,
   "editor.cursorSmoothCaretAnimation": "on",
@@ -44,7 +43,6 @@
   "editor.stickyScroll.enabled": false,
   "editor.codeLens": false,
   "files.trimTrailingWhitespace": true,
-  "editor.tabSize": 2,
   "editor.renderWhitespace": "none",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
@@ -52,5 +50,16 @@
   "editor.hideCursorInOverviewRuler": true,
   "extensions.ignoreRecommendations": true,
   "editor.wordWrap": "on",
-  "workbench.activityBar.location": "top"
+  "workbench.activityBar.location": "top",
+  "livePreview.openPreviewTarget": "External Browser",
+  "window.density.editorTabHeight": "compact",
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "editor.linkedEditing": true,
+  "auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "*"],
+  "workbench.colorTheme": "Chogori Darkest Blue",
+  "git.openRepositoryInParentFolders": "always",
+  "livePreview.httpHeaders": {
+    "Accept-Ranges": "bytes"
+  }
 }

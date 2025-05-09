@@ -1,0 +1,5 @@
+[Libinput][1267][12869][ELAN07A5:00 04F3:3245 Touchpad]
+DisableEventsOnExternalMouse=true
+
+[Mouse]
+cursorTheme=Qogir-Light

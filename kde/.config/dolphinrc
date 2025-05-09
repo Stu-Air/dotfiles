@@ -1,0 +1,18 @@
+[General]
+DoubleClickViewAction=none
+ShowSelectionToggle=false
+Version=202
+ViewPropsTimestamp=2025,4,17,19,46,36.923
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=appimagethumbnail,fontthumbnail,djvuthumbnail,cursorthumbnail,windowsimagethumbnail,kraorathumbnail,opendocumentthumbnail,imagethumbnail,windowsexethumbnail,audiothumbnail,exrthumbnail,comicbookthumbnail,jpegthumbnail,svgthumbnail,ebookthumbnail,directorythumbnail,avif,gdk-pixbuf-thumbnailer,heif,jxl
+
+[Search]
+Location=Everywhere
