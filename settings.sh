@@ -5,25 +5,26 @@
     icontheme = Qogir-Dark
     cursortheme = Qogir
 
-        interfaceFont = 'Fira Sans Medium 11'
-        documentFont = 'Fira Sans Medium 11'
-        titlebarFont = 'Fira Sans Bold 11'
-        monospaceFont = 'FiraCode Nerd Font 11'
+    interfaceFont = 'Fira Sans Medium 11'
+    documentFont = 'Fira Sans Medium 11'
+    titlebarFont = 'Fira Sans Bold 11'
+    monospaceFont = 'FiraCode Nerd Font 11'
 
 
 
 # Stow Dots
-    stow bash
+    rm ~/.bashrc && rm ~/.bash_logout && rm ~/.bash_profile && stow bash
+    rm -r ~/Pictures && stow pictures
+    stow autostart
     stow fastfetch
     stow fonts
-    stow kitty
-    stow pictures
     stow starship
     stow vscodium
 
 
 # VsCodium Extensions
-    mkdir ~/.vscode-oss/extensions/ && cd ~/.vscode-oss/extensions/
+    mkdir ~/.vscode-oss/extensions/
+    cd ~/.vscode-oss/extensions/
     git clone https://github.com/formulahendry/vscode-auto-rename-tag.git              # Auto Rename Tag
     git clone https://github.com/alefragnani/vscode-bookmarks.git                      # Bookmarks
     git clone https://github.com/streetsidesoftware/vscode-spell-checker.git           # Code spellchecker
