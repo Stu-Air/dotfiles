@@ -1,23 +1,25 @@
 #! /bin/bash
 
-    gtktheme = Qogir-Round-Dark
-    shelltheme = Qogir-Round-Dark
-    icontheme = Qogir-Dark
-    cursortheme = Qogir
+#    gtktheme = Qogir-Round-Dark
+#    shelltheme = Qogir-Round-Dark
+#    icontheme = Qogir-Dark
+#   cursortheme = Qogir
 
-    interfaceFont = 'Fira Sans Medium 11'
-    documentFont = 'Fira Sans Medium 11'
-    titlebarFont = 'Fira Sans Bold 11'
-    monospaceFont = 'FiraCode Nerd Font 11'
+#    interfaceFont = 'Fira Sans Medium 11'
+#    documentFont = 'Fira Sans Medium 11'
+#    titlebarFont = 'Fira Sans Bold 11'
+#    monospaceFont = 'FiraCode Nerd Font 11'
 
 
 
 # Stow Dots
-    rm ~/.bashrc && rm ~/.bash_logout && rm ~/.bash_profile && stow bash
-    rm -r ~/Pictures && stow pictures
+    stow alacritty
     stow autostart
+    rm ~/.bashrc && rm ~/.bash_logout && rm ~/.bash_profile && stow bash
     stow fastfetch
     stow fonts
+    stow kitty
+    rm -r ~/Pictures && stow pictures
     stow starship
     stow vscodium
 
@@ -39,7 +41,7 @@
 
 # System Themes
 
-    # ArcTheme
+    # QogirTheme
         git clone https://github.com/vinceliuice/Qogir-theme.git
         cd Qogir-theme
         ./install.sh --tweaks round -c dark -i arch -g -l

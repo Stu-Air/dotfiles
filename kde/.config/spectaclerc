@@ -1,13 +1,9 @@
 [General]
 launchAction=DoNotTakeScreenshot
-
-[GuiConfig]
-captureMode=0
+printKeyRunningAction=StartNewInstance
 
 [ImageSave]
-preferredImageFormat=JPEG
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]
-preferredVideoFormat=2
 translatedScreencastsFolder=Screencasts

@@ -133,56 +133,30 @@ ForegroundPositive=39,174,96
 ForegroundVisited=82,148,226
 
 [DirSelect Dialog]
-DirSelectDialog Size=815,565
-History Items[$e]=file:$HOME/Desktop/external/01-programming/copyCrack,file:$HOME/.config/Kvantum/Qogir-dark,file:$HOME/.config/Kvantum/Qogir-dark,file:$HOME/.config/Kvantum
-Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x88\x00\x00\x02\xa6\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+DirSelectDialog Size=820,569
+History Items[$e]=file:$HOME/Pictures/Wallpapers,file:$HOME/Desktop/Qogir-kde/Kvantum/Qogir-dark,file:$HOME/Desktop/Qogir-kde/Kvantum/Qogir-dark,file:$HOME/.config/Kvantum,file:$HOME/.config/Kvantum/Qogir-dark,file:$HOME/Pictures/Wallpapers,file:$HOME/.config/Kvantum/Qogir-dark,file:$HOME/Pictures/Wallpapers,file:$HOME/Pictures/Wallpapers
+Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x8c\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
+BrowserApplication=brave-browser.desktop
 ColorSchemeHash=d9ff32d1353be773aa923e0a9045d2cb014a9614
-TerminalApplication=kitty
-TerminalService=kitty.desktop
-UseSystemBell=true
-XftAntialias=true
+TerminalApplication=alacritty
+TerminalService=Alacritty.desktop
 XftHintStyle=hintslight
 XftSubPixel=rgb
-fixed=Fira Sans,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
-font=Fira Sans,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
-menuFont=Fira Sans,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
-smallestReadableFont=Fira Sans,8,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
-toolBarFont=Fira Sans,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
+fixed=FiraCode Nerd Font,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=Fira Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=Fira Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=Fira Sans,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=Fira Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [KDE]
 LookAndFeelPackage=com.github.vinceliuice.Qogir-dark
-widgetStyle=kvantum-dark
-
-[KFileDialog Settings]
-Allow Expansion=false
-Automatically select filename extension=true
-Breadcrumb Navigation=true
-Decoration position=2
-LocationCombo Completionmode=5
-PathCombo Completionmode=5
-Show Bookmarks=false
-Show Full Path=false
-Show Inline Previews=true
-Show Preview=false
-Show Speedbar=true
-Show hidden files=true
-Sort by=Name
-Sort directories first=true
-Sort hidden files last=false
-Sort reversed=false
-Speedbar Width=135
-View Style=DetailTree
-
-[PreviewSettings]
-EnableRemoteFolderThumbnail=false
-MaximumRemoteSize=0
 
 [WM]
 activeBackground=40,42,51
 activeBlend=40,42,51
-activeFont=Fira Sans,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
+activeFont=Fira Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=177,178,183
 inactiveBackground=40,42,51
 inactiveBlend=47,52,63
