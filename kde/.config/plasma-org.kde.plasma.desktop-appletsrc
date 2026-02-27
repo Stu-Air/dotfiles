@@ -5,28 +5,19 @@ RightButton;NoModifier=org.kde.contextmenu
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][48]
+[Containments][113]
 ItemGeometries-2560x1440=
 ItemGeometriesHorizontal=
-activityId=a3ebab1b-b1f5-408c-976f-249c5a540c36
+activityId=033f285c-1128-4c28-8732-51162acfb321
 formfactor=0
 immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.slideshow
+wallpaperplugin=org.kde.image
 
-[Containments][48][ConfigDialog]
-DialogHeight=1370
-DialogWidth=2560
-
-[Containments][48][General]
-positions={"2560x1440":[]}
-
-[Containments][48][Wallpaper][org.kde.slideshow][General]
-FillMode=6
-Image=file:///home/stu/Pictures/Wallpapers/linux-tux.png
-SlidePaths=/home/stu/Pictures/Wallpapers/
+[Containments][113][Wallpaper][org.kde.image][General]
+Image=/home/stu/.config/background
 
 [Containments][49]
 activityId=
@@ -42,7 +33,6 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][49][Applets][103][Configuration]
-PreloadWeight=100
 popupHeight=450
 popupWidth=810
 
@@ -62,9 +52,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][49][Applets][106][Configuration]
-PreloadWeight=100
-popupHeight=512
-popupWidth=651
+popupHeight=508
+popupWidth=647
 
 [Containments][49][Applets][106][Configuration][ConfigDialog]
 DialogHeight=540
@@ -80,7 +69,6 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][49][Applets][108][Configuration]
-PreloadWeight=60
 popupHeight=360
 popupWidth=360
 
@@ -89,8 +77,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][49][Applets][111][Configuration]
-PreloadWeight=65
-popupHeight=176
+popupHeight=177
 popupWidth=216
 
 [Containments][49][Applets][53]
@@ -139,9 +126,6 @@ plugin=org.kde.plasma.manage-inputmethod
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
-[Containments][49][Applets][54][Applets][61][Configuration]
-PreloadWeight=100
-
 [Containments][49][Applets][54][Applets][62]
 immutability=1
 plugin=org.kde.plasma.clipboard
@@ -154,9 +138,6 @@ plugin=org.kde.plasma.keyboardindicator
 immutability=1
 plugin=org.kde.plasma.notifications
 
-[Containments][49][Applets][54][Applets][64][Configuration]
-PreloadWeight=100
-
 [Containments][49][Applets][54][Applets][65]
 immutability=1
 plugin=org.kde.kscreen
@@ -165,18 +146,12 @@ plugin=org.kde.kscreen
 immutability=1
 plugin=org.kde.plasma.volume
 
-[Containments][49][Applets][54][Applets][66][Configuration]
-PreloadWeight=90
-
 [Containments][49][Applets][54][Applets][66][Configuration][General]
 migrated=true
 
 [Containments][49][Applets][54][Applets][69]
 immutability=1
 plugin=org.kde.plasma.brightness
-
-[Containments][49][Applets][54][Applets][69][Configuration]
-PreloadWeight=75
 
 [Containments][49][Applets][54][Applets][70]
 immutability=1
@@ -185,9 +160,6 @@ plugin=org.kde.plasma.battery
 [Containments][49][Applets][54][Applets][71]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
-
-[Containments][49][Applets][54][Applets][71][Configuration]
-PreloadWeight=60
 
 [Containments][49][Applets][54][ConfigDialog]
 DialogHeight=540
@@ -243,4 +215,4 @@ AppletOrder=75;97
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/kdeseSettingsBackup.sh,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/waybar-macos-sequoia,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/hyprland.sh,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/kde,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-theme,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/exfat_drive,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-icon-theme,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/setting backup.txt,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-kde,0,a3ebab1b-b1f5-408c-976f-249c5a540c36
+screenMapping=desktop:/Qogir-icon-theme,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/Qogir-theme,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/setting backup.txt,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/weekly_road_fuel_prices_230226.xlsx,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/LinuxSettings,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/kde,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/hyprland.sh,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-kde,0,ed02dc71-9399-4a07-b938-b0e2e46c20bd,desktop:/waybar-macos-sequoia,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/exfat_drive,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-icon-theme,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/kdeseSettingsBackup.sh,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-kde,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/paru-bin,0,ed02dc71-9399-4a07-b938-b0e2e46c20bd,desktop:/steam.desktop,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/Qogir-kde,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/applications.txt,0,ed02dc71-9399-4a07-b938-b0e2e46c20bd

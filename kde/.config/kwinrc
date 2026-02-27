@@ -7,15 +7,24 @@ Rows=1
 BorderActivate=9
 
 [Plugins]
-blurEnabled=true
+blurEnabled=false
 contrastEnabled=true
 wobblywindowsEnabled=true
-
-[Tiling]
-padding=4
 
 [Tiling][8f9a0529-30d6-4063-b54f-f213ce26ac98][23f5b125-35a0-4941-a0a2-d6c7d79c772c]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][8f9a0529-30d6-4063-b54f-f213ce26ac98][77b868da-b1a0-492b-b81c-f55139674878]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][8f9a0529-30d6-4063-b54f-f213ce26ac98][de6c789d-b472-4aae-9fce-7fa022b8fa2e]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Xwayland]
 Scale=1
+
+[org.kde.kdecoration2]
+BorderSize=Normal
+library=org.kde.kwin.aurorae.v2
+theme=__aurorae__svg__Qogir-dark-circle
