@@ -64,7 +64,7 @@ cd .. && cp -r dotfiles ~/ && cd ~/dotfiles
     #    cd Qogir-theme
     #   ./install.sh --tweaks round -c dark -i arch -g -l
     #   cd ..
-
+mkdir themes && cd themes
     # QogirIcons
         git clone https://github.com/vinceliuice/Qogir-icon-theme.git
         cd Qogir-icon-theme
@@ -80,3 +80,5 @@ cd .. && cp -r dotfiles ~/ && cd ~/dotfiles
         cd Qogir-theme
         ./install.sh
         cd ..
+        
+cd ~/dotfiles && rm -r themes
