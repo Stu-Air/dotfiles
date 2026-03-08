@@ -1,62 +1,3 @@
-<<<<<<< HEAD:dotfiles.sh
-#! /bin/bash
-
-#    gtktheme = Qogir-Round-Dark
-#    shelltheme = Qogir-Round-Dark
-#    icontheme = Qogir-Dark
-#   cursortheme = Qogir
-
-#    interfaceFont = 'Fira Sans Medium 11'
-#    documentFont = 'Fira Sans Medium 11'
-#    titlebarFont = 'Fira Sans Bold 11'
-#    monospaceFont = 'FiraCode Nerd Font 11'
-
-
-
-# Stow Dots
-    stow alacritty
-    stow autostart
-    rm ~/.bashrc && rm ~/.bash_logout && rm ~/.bash_profile && stow bash
-    stow fastfetch
-    stow fonts
-    stow kitty
-    rm -r ~/Pictures && stow pictures
-    stow starship
-    stow vscodium
-
-
-# VsCodium Extensions
-    mkdir ~/.vscode-oss/extensions/
-    cd ~/.vscode-oss/extensions/
-    git clone https://github.com/formulahendry/vscode-auto-rename-tag.git              # Auto Rename Tag
-    git clone https://github.com/alefragnani/vscode-bookmarks.git                      # Bookmarks
-    git clone https://github.com/streetsidesoftware/vscode-spell-checker.git           # Code spellchecker
-    git clone https://github.com/usernamehw/vscode-error-lens.git                      # Code Error lens
-    git clone https://github.com/kisstkondoros/gutter-preview.git                      # image previewer
-    git clone https://github.com/microsoft/vscode-livepreview.git                      # Live preview
-    git clone https://github.com/prettier/prettier-vscode.git                          # Prettier
-    git clone https://github.com/alefragnani/vscode-project-manager.git                # Project manager
-    git clone https://github.com/eggman314/chogori.git                                 # chogori
-    git clone https://github.com/material-extensions/vscode-material-icon-theme.git    # Material icons
-    git clone https://github.com/material-extensions/vscode-material-product-icons.git # Material product icons
-
-# System Themes
-
-    # QogirTheme
-        git clone https://github.com/vinceliuice/Qogir-theme.git
-        cd Qogir-theme
-        ./install.sh --tweaks round -c dark -i arch -g -l
-        cd ..
-
-    # QogirIcons
-        git clone https://github.com/vinceliuice/Qogir-icon-theme.git
-        cd Qogir-icon-theme
-        ./install.sh -c dark
-        cd ..
-
-    # Fira Sans Font  ( already in stow files)
-    # FiraCode Nerd Font (already in stow files)
-=======
 #! /bin/bash
 
 #    gtktheme = Qogir-Round-Dark
@@ -69,7 +10,7 @@
 #    titlebarFont = 'Fira Sans Bold 11'
 #    monospaceFont = 'FiraCode Nerd Font 11'
 
-
+cd .. && cp -r dotfiles ~/ && cd ~/dotfiles
 
 # Stow Dots
     stow alacritty
@@ -83,22 +24,38 @@
     stow pictures
     stow starship
     stow vscodium
+    # kde settings via stow
+    rm ~/.config/Trolltech.conf
+    rm ~/.config/dolphinrc
+    rm ~/.config/gtkrc
+    rm ~/.config/kdedefaults/kcminputrc
+    rm ~/.config/kdedefaults/kdeglobals
+    rm ~/.config/kdedefaults/ksplashrc
+    rm ~/.config/kdedefaults/kwinrc
+    rm ~/.config/kdedefaults/package
+    rm ~/.config/kdedefaults/plasmarc
+    rm ~/.config/kdeglobals
+    rm ~/.config/kglobalshortcutsrc
+    rm ~/.config/ktimezonedrc
+    rm ~/.config/kwinoutputconfig.json
+    rm ~/.config/kwinrc
+    rm ~/.config/plasma-localerc
+    rm ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+    rm ~/.config/plasmashellrc
+    rm ~/.config/xsettingsd/xsettingsd.conf
+    stow kde
 
-
-# VsCodium Extensions
-#    mkdir ~/.vscode-oss/extensions/
-#    cd ~/.vscode-oss/extensions/
-#    git clone https://github.com/formulahendry/vscode-auto-rename-tag.git              # Auto Rename Tag
-#    git clone https://github.com/alefragnani/vscode-bookmarks.git                      # Bookmarks
-#    git clone https://github.com/streetsidesoftware/vscode-spell-checker.git           # Code spellchecker
-#    git clone https://github.com/usernamehw/vscode-error-lens.git                      # Code Error lens
-#    git clone https://github.com/kisstkondoros/gutter-preview.git                      # image previewer
-#    git clone https://github.com/microsoft/vscode-livepreview.git                      # Live preview
-#    git clone https://github.com/prettier/prettier-vscode.git                          # Prettier
-#    git clone https://github.com/alefragnani/vscode-project-manager.git                # Project manager
-#    git clone https://github.com/eggman314/chogori.git                                 # chogori
-#    git clone https://github.com/material-extensions/vscode-material-icon-theme.git    # Material icons
-#    git clone https://github.com/material-extensions/vscode-material-product-icons.git # Material product icons
+# VsCode Extensions
+    code --install-extension formulahendry.auto-rename-tag          # Auto Rename Tag
+    code --install-extension alefragnani.Bookmarks                  # Bookmarks
+    code --install-extension usernamehw.errorlens                   # Code Error lens
+    code --install-extension kisstkondoros.vscode-gutter-preview    # image previewer
+    code --install-extension ms-vscode.live-server                  # Live preview
+    code --install-extension esbenp.prettier-vscode                 # Prettier
+    code --install-extension alefragnani.project-manager            # Project manager
+    code --install-extension eggman.chogori                         # chogori
+    code --install-extension PKief.material-icon-theme              # Material icons
+    code --install-extension PKief.material-product-icons           # Material product icons
 
 # System Themes
 
@@ -123,29 +80,3 @@
         cd Qogir-theme
         ./install.sh
         cd ..
-
-# kde themeing via stow
-
-  rm ~/.config/Trolltech.conf
-  rm ~/.config/dolphinrc
-  rm ~/.config/gtkrc
-  rm ~/.config/kdedefaults/kcminputrc
-  rm ~/.config/kdedefaults/kdeglobals
-  rm ~/.config/kdedefaults/ksplashrc
-  rm ~/.config/kdedefaults/kwinrc
-  rm ~/.config/kdedefaults/package
-  rm ~/.config/kdedefaults/plasmarc
-  rm ~/.config/kdeglobals
-  rm ~/.config/kglobalshortcutsrc
-  rm ~/.config/ktimezonedrc
-  rm ~/.config/kwinoutputconfig.json
-  rm ~/.config/kwinrc
-  rm ~/.config/plasma-localerc
-  rm ~/.config/plasma-org.kde.plasma.desktop-appletsrc
-  rm ~/.config/plasmashellrc
-  rm ~/.config/xsettingsd/xsettingsd.conf
-  stow kde
-
-
-
->>>>>>> 2553c04 (add windows fonts and changed a a bit of everything):settings.sh
