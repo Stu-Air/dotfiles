@@ -1,134 +1,238 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "builtin",
+    "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/\" -name \"*.png\" | sort -R | head -1)",
+    "type": "auto",
     "height": 15,
-    "width": 30,
+    "width": 32,
     "padding": {
       "top": 5,
-      "left": 3
-    }
+      "left": 5,
+      "right": 5,
+      "width": 32, // Width in characters (for image logos)
+      "height": 17, // Height in characters (for image logos)
+    },
+  },
+  "display": {
+    "color": {
+      "keys": "bright_white",
+    },
+    "bar": {
+      "width": 10, // Width of percentage bars
+      "char": {
+        "elapsed": "󱓻", // Character for elapsed portion
+        "total": "-", // Character for total portion
+      },
+    },
+    "separator": "",
+    "constants": [
+      "──────────────────────────────────────────────────────", // {$1} - horizontal line for borders
+      "\u001b[55D", // {$2} - move cursor left 55 columns
+      "\u001b[55C", // {$3} - move cursor right 55 columns
+      "\u001b[54C", // {$4} - move cursor right 54 columns
+    ],
+    "brightColor": true,
   },
   "modules": [
-    "break",
     {
-      "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
+      "type": "title",
+      "key": "─────────────{$1}\u001b[39D",
+      "format": "\u001b[1m{#keys}  {1} - {2} ",
     },
-    {
-      "type": "host",
-      "key": " PC",
-      "keyColor": "green"
-    },
-    {
-      "type": "cpu",
-      "key": "│ ├",
-      "keyColor": "green"
-    },
-    {
-      "type": "gpu",
-      "key": "│ ├󰍛",
-      "keyColor": "green"
-    },
-    {
-      "type": "memory",
-      "key": "│ ├󰍛",
-      "keyColor": "green"
-    },
-    {
-      "type": "disk",
-      "key": "└ └",
-      "keyColor": "green"
-    },
-    {
-      "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
-    },
-    "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
-    },
+    //
     {
       "type": "os",
-      "key": " OS",
-      "keyColor": "yellow"
+      "key": "   OS          ",
+      "keyColor": "magenta",
     },
     {
       "type": "kernel",
-      "key": "│ ├",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "bios",
-      "key": "│ ├",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "packages",
-      "key": "│ ├󰏖",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "shell",
-      "key": "└ └",
-      "keyColor": "yellow"
-    },
-    "break",
-    {
-      "type": "de",
-      "key": " DE",
-      "keyColor": "blue"
-    },
-    {
-      "type": "lm",
-      "key": "│ ├",
-      "keyColor": "blue"
-    },
-    {
-      "type": "wm",
-      "key": "│ ├",
-      "keyColor": "blue"
-    },
-    {
-      "type": "wmtheme",
-      "key": "│ ├󰉼",
-      "keyColor": "blue"
-    },
-    {
-      "type": "terminal",
-      "key": "└ └",
-      "keyColor": "blue"
-    },
-    {
-      "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
-    },
-    "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m┌────────────────────Uptime / Age / DT────────────────────┐"
-    },
-    {
-      "type": "command",
-      "key": "  OS Age ",
+      "key": "   Kernel      ",
       "keyColor": "magenta",
-      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
     },
     {
       "type": "uptime",
-      "key": "  Uptime ",
-      "keyColor": "magenta"
+      "key": "  󰅐 Start Time  ",
+      "keyColor": "magenta",
     },
     {
-      "type": "datetime",
-      "key": "  DateTime ",
-      "keyColor": "magenta"
+      "type": "disk",
+      "key": "  OS Age        ",
+      "folders": "/", // Check root filesystem
+      "format": "{create-time:10} [{days} days]", // Show creation time and age in days
+      "keyColor": "magenta",
+    },
+    {
+      "type": "command",
+      "key": "Ethernet  ",
+      "text": "IF=eth0; printf \"%s %s %s\\n\" \"$IF\" \"$(cat /sys/class/net/$IF/operstate)\" \"$(cat /sys/class/net/$IF/speed 2>/dev/null | sed 's/$/Mb\\/s/')\"",
+    },
+    {
+      "type": "wifi",
+      "key": "WiFi      ",
+    },
+    // Hardware in green
+    {
+      "type": "custom",
+      "key": "{#green}┌─────────────{$1}{#green}┐\u001b[35D",
+      "format": "{#bright_green} Hardware ",
+    },
+    {
+      "type": "chassis",
+      "key": "  󰌢 PC  ",
+      "keyColor": "green",
+    },
+    {
+      "type": "board",
+      "key": "     Board  ",
+      "keyColor": "green",
+    },
+    {
+      "type": "cpu",
+      "key": "    󰻠 CPU    ",
+      "keyColor": "green",
+      "temp": true,
+      "freqNdigits": 1,
+    },
+    {
+      "type": "gpu",
+      "key": "    󰍛 GPU    ",
+      "keyColor": "green",
+    },
+    {
+      "type": "memory",
+      "key": "    󰑭 RAM    ",
+      "keyColor": "green",
+      "percent": {
+        "type": 3, // 3 = show number + bar + percentage
+        "green": 30, // <30% is green
+        "yellow": 70, // 30-70% is yellow, >70% is red
+      },
+    },
+    {
+      "type": "swap",
+      "key": "    󰓡 Swap   ",
+      "keyColor": "green",
+      "percent": {
+        "type": 3, // 3 = show number + bar + percentage
+        "green": 30, // <30% is green
+        "yellow": 70, // 30-70% is yellow, >70% is red
+      },
+    },
+    {
+      "type": "disk",
+      "key": "     SSD    ",
+      "keyColor": "green",
+      "percent": {
+        "type": 3, // 3 = show number + bar + percentage
+        "green": 30, // <30% is green
+        "yellow": 70, // 30-70% is yellow, >70% is red
+      },
     },
     {
       "type": "custom",
-      "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
+      "key": "{#green}└─────────────{$1}┘{#keys}",
+      "format": "",
     },
-    "break"
-  ]
+
+    // Desktop in blue
+    {
+      "type": "custom",
+      "key": "{#blue}┌─────────────{$1}{#blue}┐\u001b[35D",
+      "format": "{#bright_blue} Desktop ",
+    },
+    {
+      "type": "de",
+      "key": "   DE  ",
+      "keyColor": "blue",
+    },
+    {
+      "type": "wm",
+      "key": "    󰧨 Window Manager  ",
+      "keyColor": "blue",
+    },
+    {
+      "type": "theme",
+      "key": "    󰉼 Themes          ",
+      "keyColor": "blue",
+      "format": "{2}",
+    },
+    {
+      "type": "icons",
+      "key": "    󰸉 System Icons    ",
+      "keyColor": "blue",
+      "format": "{2}",
+    },
+    {
+      "type": "font",
+      "key": "    󰛖 Font            ",
+      "keyColor": "blue",
+      "format": "{1}",
+    },
+    {
+      "type": "cursor",
+      "key": "    󰇀 Cursor          ",
+      "keyColor": "blue",
+      "format": "{1}",
+    },
+    {
+      "type": "display",
+      "key": "    󰍹 Display         ",
+      "keyColor": "blue",
+    },
+    {
+      "type": "sound",
+      "key": "    󰜟 Sound           ",
+      "keyColor": "blue",
+      "percent": {
+        "type": 2, // 3 = show number + bar + percentage
+        "green": 30, // <30% is green
+        "yellow": 70, // 30-70% is yellow, >70% is red
+      },
+    },
+    {
+      "type": "media",
+      "key": "    󰎇 Media           ",
+      "keyColor": "blue",
+      "format": "{#magenta}{1}",
+    },
+    {
+      "type": "custom",
+      "key": "{#blue}└─────────────{$1}┘{#keys}",
+      "format": "",
+    },
+
+    // Terminal in yellow
+    {
+      "type": "custom",
+      "key": "{#yellow}┌─────────────{$1}{#yellow}┐\u001b[35D",
+      "format": "{#bright_yellow} Terminal ",
+    },
+    {
+      "type": "shell",
+      "key": "     Shell      ",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "terminal",
+      "key": "     Terminal   ",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "terminalfont",
+      "key": "    󰛖 Term Font  ",
+      "keyColor": "yellow",
+      "format": "{2}",
+    },
+    {
+      "type": "packages",
+      "key": "    󰏖 Packages   ",
+      "keyColor": "yellow",
+    },
+    {
+      "type": "custom",
+      "key": "{#yellow}└─────────────{$1}┘{#keys}",
+      "format": "",
+    },
+  ],
 }

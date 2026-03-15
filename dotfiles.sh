@@ -10,12 +10,14 @@
 #    titlebarFont = 'Fira Sans Bold 11'
 #    monospaceFont = 'FiraCode Nerd Font 11'
 
-cd .. && cp -r dotfiles ~/ && cd ~/dotfiles
+
 
 # Stow Dots
     stow alacritty
     stow autostart
-    rm ~/.bashrc && rm ~/.bash_logout && rm ~/.bash_profile
+    rm ~/.bashrc
+    rm ~/.bash_logout
+    rm ~/.bash_profile
     stow bash
     stow fastfetch
     stow fonts
@@ -23,7 +25,7 @@ cd .. && cp -r dotfiles ~/ && cd ~/dotfiles
     rm -r ~/Pictures
     stow pictures
     stow starship
-    stow vscodium
+    stow code
     # kde settings via stow
     rm ~/.config/Trolltech.conf
     rm ~/.config/dolphinrc
@@ -43,6 +45,7 @@ cd .. && cp -r dotfiles ~/ && cd ~/dotfiles
     rm ~/.config/plasma-org.kde.plasma.desktop-appletsrc
     rm ~/.config/plasmashellrc
     rm ~/.config/xsettingsd/xsettingsd.conf
+    rm ~/.config/KDE/UserFeedback.conf
     stow kde
 
 # VsCode Extensions
@@ -64,21 +67,21 @@ cd .. && cp -r dotfiles ~/ && cd ~/dotfiles
     #    cd Qogir-theme
     #   ./install.sh --tweaks round -c dark -i arch -g -l
     #   cd ..
-mkdir themes && cd themes
+#mkdir ~/dotfiles/themes && cd themes
     # QogirIcons
-        git clone https://github.com/vinceliuice/Qogir-icon-theme.git
-        cd Qogir-icon-theme
-        ./install.sh
-        cd ..
+#        git clone https://github.com/vinceliuice/Qogir-icon-theme.git
+#        cd Qogir-icon-theme
+#        ./install.sh
+#        cd ..
 
     # Fira Sans Font  ( already in stow files)
     # FiraCode Nerd Font (already in stow files)
 
 
 # QogirTheme kde
-        git clone https://github.com/vinceliuice/Qogir-kde.git
-        cd Qogir-theme
-        ./install.sh
-        cd ..
+#        git clone https://github.com/vinceliuice/Qogir-kde.git
+#        cd Qogir-theme
+#        ./install.sh
+#        cd ..
         
-cd ~/dotfiles && rm -r themes
+#cd ~/dotfiles && rm -r themes

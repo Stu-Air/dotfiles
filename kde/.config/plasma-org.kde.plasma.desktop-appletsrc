@@ -5,19 +5,16 @@ RightButton;NoModifier=org.kde.contextmenu
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][113]
+[Containments][114]
 ItemGeometries-2560x1440=
 ItemGeometriesHorizontal=
-activityId=033f285c-1128-4c28-8732-51162acfb321
+activityId=0dd5e693-b364-4d98-87af-bd709cac592c
 formfactor=0
 immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
-
-[Containments][113][Wallpaper][org.kde.image][General]
-Image=/home/stu/.config/background
 
 [Containments][49]
 activityId=
@@ -61,7 +58,7 @@ DialogWidth=720
 
 [Containments][49][Applets][106][Configuration][General]
 favoritesPortedToKAstats=true
-icon=archlinux
+icon=/usr/share/pixmaps/archlinux-logo.png
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][49][Applets][108]
@@ -215,4 +212,4 @@ AppletOrder=75;97
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/Qogir-icon-theme,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/Qogir-theme,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/setting backup.txt,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/weekly_road_fuel_prices_230226.xlsx,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/LinuxSettings,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/kde,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/hyprland.sh,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-kde,0,ed02dc71-9399-4a07-b938-b0e2e46c20bd,desktop:/waybar-macos-sequoia,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/exfat_drive,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-icon-theme,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/kdeseSettingsBackup.sh,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-kde,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/paru-bin,0,ed02dc71-9399-4a07-b938-b0e2e46c20bd,desktop:/steam.desktop,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/Qogir-kde,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/applications.txt,0,ed02dc71-9399-4a07-b938-b0e2e46c20bd
+screenMapping=desktop:/exfat_drive,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-kde,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/Qogir-icon-theme,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/kdeseSettingsBackup.sh,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/hyprland.sh,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/weekly_road_fuel_prices_230226.xlsx,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/Qogir-icon-theme,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/arch-apps,0,0dd5e693-b364-4d98-87af-bd709cac592c,desktop:/paru-bin,0,ed02dc71-9399-4a07-b938-b0e2e46c20bd,desktop:/Qogir-kde,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/steam.desktop,0,033f285c-1128-4c28-8732-51162acfb321,desktop:/applications.txt,0,ed02dc71-9399-4a07-b938-b0e2e46c20bd,desktop:/DCIM,0,0dd5e693-b364-4d98-87af-bd709cac592c,desktop:/waybar-macos-sequoia,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-theme,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/setting backup.txt,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/Qogir-kde,0,ed02dc71-9399-4a07-b938-b0e2e46c20bd,desktop:/kde,0,a3ebab1b-b1f5-408c-976f-249c5a540c36,desktop:/LinuxSettings,0,033f285c-1128-4c28-8732-51162acfb321
