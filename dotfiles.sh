@@ -25,7 +25,7 @@
     rm -r ~/Pictures
     stow pictures
     stow starship
-    stow code
+    stow vscodium
     # kde settings via stow
     rm ~/.config/Trolltech.conf
     rm ~/.config/dolphinrc
@@ -48,17 +48,17 @@
     rm ~/.config/KDE/UserFeedback.conf
     stow kde
 
-# VsCode Extensions
-    code --install-extension formulahendry.auto-rename-tag          # Auto Rename Tag
-    code --install-extension alefragnani.Bookmarks                  # Bookmarks
-    code --install-extension usernamehw.errorlens                   # Code Error lens
-    code --install-extension kisstkondoros.vscode-gutter-preview    # image previewer
-    code --install-extension ms-vscode.live-server                  # Live preview
-    code --install-extension esbenp.prettier-vscode                 # Prettier
-    code --install-extension alefragnani.project-manager            # Project manager
-    code --install-extension eggman.chogori                         # chogori
-    code --install-extension PKief.material-icon-theme              # Material icons
-    code --install-extension PKief.material-product-icons           # Material product icons
+# VsCodium Extensions
+    codium --install-extension formulahendry.auto-rename-tag          # Auto Rename Tag
+    codium --install-extension alefragnani.Bookmarks                  # Bookmarks
+    codium --install-extension usernamehw.errorlens                   # Code Error lens
+    codium --install-extension kisstkondoros.vscode-gutter-preview    # image previewer
+    codium --install-extension ms-vscode.live-server                  # Live preview
+    codium --install-extension esbenp.prettier-vscode                 # Prettier
+    codium --install-extension alefragnani.project-manager            # Project manager
+    codium --install-extension eggman.chogori                         # chogori
+    codium --install-extension PKief.material-icon-theme              # Material icons
+    codium --install-extension PKief.material-product-icons           # Material product icons
 
 # System Themes
 
@@ -67,21 +67,20 @@
     #    cd Qogir-theme
     #   ./install.sh --tweaks round -c dark -i arch -g -l
     #   cd ..
-#mkdir ~/dotfiles/themes && cd themes
+    
     # QogirIcons
-#        git clone https://github.com/vinceliuice/Qogir-icon-theme.git
-#        cd Qogir-icon-theme
-#        ./install.sh
-#        cd ..
+        git clone https://github.com/vinceliuice/Qogir-icon-theme.git
+        cd Qogir-icon-theme
+        ./install.sh
+        cd ..
 
+    # QogirTheme kde
+        git clone https://github.com/vinceliuice/Qogir-kde.git
+        cd Qogir-kde
+        ./install.sh
+        cd sddm
+        ./install.sh
+        cd ..
+    
     # Fira Sans Font  ( already in stow files)
     # FiraCode Nerd Font (already in stow files)
-
-
-# QogirTheme kde
-#        git clone https://github.com/vinceliuice/Qogir-kde.git
-#        cd Qogir-theme
-#        ./install.sh
-#        cd ..
-        
-#cd ~/dotfiles && rm -r themes
