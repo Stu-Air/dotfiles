@@ -68,17 +68,27 @@
     #   ./install.sh --tweaks round -c dark -i arch -g -l
     #   cd ..
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 1f4634e (Changing tot VSCodium)
+=======
+
+=======
+    
+>>>>>>> d8d6753 (Replace VsCode with VsCodium in dotfiles.sh)
+>>>>>>> f8364cd (Replace VsCode with VsCodium in dotfiles.sh)
     # QogirIcons
         git clone https://github.com/vinceliuice/Qogir-icon-theme.git
         cd Qogir-icon-theme
         ./install.sh
         cd ..
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f8364cd (Replace VsCode with VsCodium in dotfiles.sh)
 
     # QogirTheme kde
         git clone https://github.com/vinceliuice/Qogir-kde.git
@@ -87,7 +97,12 @@
         cd sddm
         ./install.sh
         cd ..
+<<<<<<< HEAD
 >>>>>>> 1f4634e (Changing tot VSCodium)
+=======
+=======
+>>>>>>> d8d6753 (Replace VsCode with VsCodium in dotfiles.sh)
+>>>>>>> f8364cd (Replace VsCode with VsCodium in dotfiles.sh)
 
     # QogirTheme kde
         git clone https://github.com/vinceliuice/Qogir-kde.git
@@ -102,4 +117,8 @@
     # FiraCode Nerd Font (already in stow files)
 =======
     # FiraCode Nerd Font (already in stow files)
+<<<<<<< HEAD
 >>>>>>> 1f4634e (Changing tot VSCodium)
+=======
+>>>>>>> d8d6753 (Replace VsCode with VsCodium in dotfiles.sh)
+>>>>>>> f8364cd (Replace VsCode with VsCodium in dotfiles.sh)
