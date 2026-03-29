@@ -67,12 +67,27 @@
     #    cd Qogir-theme
     #   ./install.sh --tweaks round -c dark -i arch -g -l
     #   cd ..
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 1f4634e (Changing tot VSCodium)
     # QogirIcons
         git clone https://github.com/vinceliuice/Qogir-icon-theme.git
         cd Qogir-icon-theme
         ./install.sh
         cd ..
+<<<<<<< HEAD
+=======
+
+    # QogirTheme kde
+        git clone https://github.com/vinceliuice/Qogir-kde.git
+        cd Qogir-kde
+        ./install.sh
+        cd sddm
+        ./install.sh
+        cd ..
+>>>>>>> 1f4634e (Changing tot VSCodium)
 
     # QogirTheme kde
         git clone https://github.com/vinceliuice/Qogir-kde.git
@@ -83,4 +98,8 @@
         cd ..
     
     # Fira Sans Font  ( already in stow files)
+<<<<<<< HEAD
     # FiraCode Nerd Font (already in stow files)
+=======
+    # FiraCode Nerd Font (already in stow files)
+>>>>>>> 1f4634e (Changing tot VSCodium)
